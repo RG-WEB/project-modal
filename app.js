@@ -11,3 +11,9 @@ openBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   modal.classList.remove("show-modal");
 });
+
+window.addEventListener("click", function (e) {
+  if (e.target == modal) {
+    modal.classList.remove("show-modal");
+  }
+});
